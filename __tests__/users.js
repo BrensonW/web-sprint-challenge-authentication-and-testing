@@ -5,7 +5,7 @@ const { intersect } = require('../database/dbConfig');
 const db = require('../database/dbConfig');
 
 beforeAll(async () => {
-    await db('users'),truncate();
+    await db('users').truncate();
 });
 
 describe('Users integration tests', () => {
